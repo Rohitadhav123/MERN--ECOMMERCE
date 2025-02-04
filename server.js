@@ -25,7 +25,7 @@ app.use('/api/v1/category',categoryRoute)
 app.use('/api/v1/product',productRoute)
 
 const cors = require('cors');
-app.use(cors({ origin: 'https://your-frontend.onrender.com', credentials: true }));
+app.use(cors({ origin: 'https://mern-ecommerce-2-uhaw.onrender.com/', credentials: true }));
 
 
 app.listen(port,()=>{
