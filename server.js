@@ -24,6 +24,8 @@ app.use('/api/v1/auth', authcontriler )
 app.use('/api/v1/category',categoryRoute)
 app.use('/api/v1/product',productRoute)
 
+const cors = require('cors');
+app.use(cors({ origin: 'https://your-frontend.onrender.com', credentials: true }));
 
 
 app.listen(port,()=>{
